@@ -10,7 +10,7 @@ Serve Python 3.10–3.12. Dalla cartella del progetto:
 python -m venv .venv
 ```
 
-Attiva l'ambiente con `source .venv/bin/activate` su macOS/Linux oppure ` .venv\Scripts\Activate.ps1` in PowerShell. Poi esegui:
+Attiva l'ambiente con `source .venv/bin/activate` su macOS/Linux oppure `.venv\Scripts\Activate.ps1` in PowerShell. Poi esegui:
 
 ```sh
 python -m pip install -r requirements.txt
