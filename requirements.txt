@@ -1,5 +1,6 @@
 fastapi>=0.115,<1
 uvicorn>=0.34,<1
+hypercorn>=0.17,<1
 python-multipart>=0.0.22,<1
 faster-whisper>=1.2,<2
 # PyAV 19 removed the metadata_errors argument used by faster-whisper 1.2.

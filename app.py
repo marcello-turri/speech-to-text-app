@@ -44,7 +44,12 @@ def index():
 def get_model():
     from faster_whisper import WhisperModel
 
-    return WhisperModel(os.getenv("WHISPER_MODEL", "small"), device="cpu", compute_type="int8")
+    return WhisperModel(
+        os.getenv("WHISPER_MODEL", "small"),
+        device="cpu",
+        compute_type="int8",
+        cpu_threads=int(os.getenv("WHISPER_CPU_THREADS", "0")),
+    )
 
 
 def transcribe_audio(audio):
