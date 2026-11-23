@@ -3,27 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f5fc">
-  <title>Quaderno · Trascrizione lezioni</title>
+  <meta name="theme-color" content="#f8f7fc">
+  <title>Nota · Trascrizione lezioni</title>
   <link rel="stylesheet" href="/static/style.css">
   <script type="module" src="/static/app.js"></script>
 </head>
 <body>
-  <header class="top"><div class="shell brand"><span class="mark" aria-hidden="true">≋</span> Quaderno</div></header>
+  <header class="top"><div class="shell brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span> nota.</div></header>
   <main class="shell">
     <div class="hero">
-      <p class="eyebrow">TRASCRIZIONE LEZIONI</p>
-      <h1>Dalle lezioni<br> <em>agli appunti.</em></h1>
-      <p>Carica le registrazioni in italiano e raccogli tutte le trascrizioni in un unico documento.</p>
+      <h1>Lezioni in <em>parole.</em></h1>
+      <p>Trasforma le registrazioni delle lezioni in un unico documento, pronto da studiare.</p>
     </div>
     <div class="workspace">
       <section class="card" aria-labelledby="audio-title">
         <h2 id="audio-title">Registrazioni</h2>
-        <p class="hint">L’ordine qui sotto sarà lo stesso nel documento finale.</p>
+        <p class="hint">Trascina gli audio qui sotto, poi mettili in ordine.</p>
         <label class="drop" id="drop">
           <input id="files" type="file" accept=".mp3,.wav,.m4a,.aac,.ogg,.opus,.flac,.webm,.mp4" multiple>
           <span class="upload-icon" aria-hidden="true">＋</span>
-          <strong>Seleziona o trascina gli audio</strong>
+          <strong>Aggiungi registrazioni</strong>
           <small>MP3, WAV, M4A e altri formati · max 250 MB per file</small>
         </label>
         <ol id="queue" class="queue" aria-label="Ordine delle registrazioni"></ol>
@@ -32,8 +31,8 @@
         <h2 id="export-title">Documento finale</h2>
         <fieldset>
           <legend>Scegli il formato</legend>
-          <label class="choice"><input type="radio" name="format" value="pdf" form="workflow" required><span><b>PDF</b><small>Da leggere o stampare</small></span></label>
-          <label class="choice"><input type="radio" name="format" value="docx" form="workflow" required><span><b>Word</b><small>Modificabile · .docx</small></span></label>
+          <label class="choice"><input type="radio" name="format" value="pdf" form="workflow" required><span class="format-icon" aria-hidden="true">PDF</span><span><b>PDF</b><small>Da leggere e stampare</small></span></label>
+          <label class="choice"><input type="radio" name="format" value="docx" form="workflow" required><span class="format-icon" aria-hidden="true">DOC</span><span><b>Word</b><small>Modificabile · .docx</small></span></label>
         </fieldset>
         <form id="workflow">
           <button type="submit" id="start" disabled>Trascrivi e scarica</button>

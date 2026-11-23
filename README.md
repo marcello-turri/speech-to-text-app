@@ -1,4 +1,4 @@
-# Quaderno
+# Nota
 
 Carica le registrazioni di una lezione, riordinale e scarica un documento PDF o Word con la trascrizione completa in italiano.
 
